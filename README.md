@@ -21,3 +21,11 @@ where
 
 
 $$L = \sqrt{\frac{\hbar \cdot G}{c^3}}$$
+
+
+
+# Link #
+
+Find the paper pdf here
+
+[Deformation of  the Metric Tensor Unifying Quantum Mechanics, Generalized Uncertainty Principle, and Gravitational Fields through Noncommutative Heisenberg Algebra](https://drive.google.com/file/d/16BknTAIqC_V6bRiYo3bjeHHkRjSDV3II/view?usp=sharing)
