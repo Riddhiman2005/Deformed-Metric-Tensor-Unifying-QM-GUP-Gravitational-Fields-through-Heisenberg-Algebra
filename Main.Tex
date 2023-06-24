@@ -1,0 +1,527 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{amssymb}
+
+\title{\textbf{Exploring Deformed Metric Tensor through Noncommutative Heisenberg Algebra and Generalized Uncertainty Principle in the Context of Quantum Mechanics and Gravitational Fields}}
+
+\author{\Large Riddhiman Bhattacharya}
+\date{June 24, 2023}
+
+\large 
+
+\begin{document}
+\maketitle
+\large 
+\begin{abstract}
+\Large
+
+
+When considering the combination of quantum mechanics (QM) and general relativity (GR), we can extend the fundamental theory of QM by incorporating concepts such as the non-commutative Heisenberg algebra, the generalized uncertainty principle (GUP), and the integration of gravitational fields. This extension leads us to suggest a possible deformation of the metric tensor that combines the effects of QM and GR.
+
+The deformation arises from the non-commutative algebra and the maximal space-like four-acceleration, and it corresponds to curvature in an 8-dimensional spacetime tangent bundle, which is a generalization of Riemannian spacetime. By applying this concept, we can derive a deformed metric tensor that determines how the affine connection on a Riemannian manifold is affected.
+In this paper, I explored the symmetric properties of the deformed metric tensor, the affine connection and found out how a parallelly transported tangent vector depends on the spacelike four-acceleration that is given in the units of Length(L)
+where 
+
+
+\begin{equation}
+L = \sqrt{\frac{\hbar \cdot G}{c^3}}
+\label{eq:1}
+\end{equation}
+
+\end{abstract}
+
+\section{\huge Introduction}
+\Large 
+
+Quantum Mechanics (QM) and the Standard Model (SM) are powerful frameworks that describe the behavior of particles and their interactions, encompassing the electromagnetic, weak nuclear, and strong nuclear forces. However, they do not fully account for the gravitational force, which is described by General Relativity (GR).
+
+One major difference between classical physics and QM is the Heisenberg Uncertainty Principle (HUP). Unlike classical mechanics, which assumes precise knowledge of particle properties, HUP states that there is an inherent limit to the simultaneous accuracy of certain pairs of measurements, such as position and momentum. This principle arises from the wave-particle duality, highlighting the fundamental fuzziness and uncertainty in nature.
+
+While QM and its extensions, like the SM, have been incredibly successful in explaining various phenomena, they fall short in incorporating gravitational interactions. This is because they treat spacetime as a fixed, flat background, whereas GR reveals that spacetime is dynamic and influenced by the presence of mass and energy.
+
+In GR, the theory of gravity, the apparent gravitational pull between masses is understood as the curvature of spacetime caused by those masses. This curvature is of a geometric nature, where mass and energy bend the four-dimensional spacetime, forming a Riemannian manifold. In this manifold, the spacetime geometry is described by a symmetric metric tensor and an affine connection, which is both torsion-free and metric compatible. The connection can be determined based on the metric tensor itself.
+
+QM and GR have some persistent inconsistencies which include the incompatibility near singularities, the challenge of determining the gravitational field of a quantum particle considering the uncertainty in QM, and the different interpretations of time in QM and classical GR.
+
+In order to bridge the gap between QM and GR, a new theory is needed that can encompass both frameworks. Approaching quantum gravity by implementing Quantum Field Theory (QFT) techniques to GR has not yielded the desired results. Renormalization techniques applied to perturbatively quantized gravity fail to produce finite measurable results. This suggests the need for alternative approaches to Quantum Gravity (QG).[1]
+
+One such approach is the Generalized Uncertainty Principle (GUP)[2-6,12,7,30-35], which modifies the HUP and incorporates the effects of gravity in quantum physics. GUP predicts a deformed canonical commutator and has been extensively used to incorporate quantum gravitational effects. 
+
+The existence of a fundamental physical minimum length and the modification of the Heisenberg Uncertainty Principle near the Planck scale are suggested by theories such as String Theory, Loop Quantum Gravity, Doubly Special Relativity, and Black Hole thermodynamics. The GUP arises from these theories and provides a framework for incorporating minimal length and uncertainty considerations.[37,38,26]
+
+The present work adopts a minimal length approach that constrains the inherent uncertainties in quantum states using noncommutative operators, as governed by the HUP. However, this approach does not incorporate the effects of gravitational fields. The GUP emerges from the gravitational impacts on quantum measurements and helps explain the origin of the gravitational field and the behavior of particles within it.[14,15]
+
+The effects of the minimal length approach on various quantities, such as the line element, metric tensor, and geodesics, have been studied[28,29]. Additional terms proportional to the GUP parameter and squared spacelike four-acceleration appear in the line element and metric tensor. The geodesics exhibit multiple terms with higher-order derivatives[28].
+
+\subsection{\Large Affine connection}
+An affine connection is a mathematical concept that connects neighboring curved spaces, allowing for the differentiation of tangent vector fields and ensuring their dependence on the manifold is constrained within a specific vector space[21]. It is a function that assigns a covariant derivative or a new tangent vector to each tangent vector and vector field. In the realm of differential geometry, the generic form of the affine connection was was suggested as[22]
+\begin{equation}
+\Gamma^{\mu}_{\lambda\nu} = \begin{Bmatrix} \mu \\ \lambda \nu \end{Bmatrix} + K^{\mu}_{\lambda\nu} + \frac{1}{2} (Q^{\mu}_{\lambda,\nu} + Q^{\mu}_{\nu,\lambda} - Q^{\mu}_{.\nu\lambda})
+\label{2}
+\end{equation}
+
+The dot is lower indices refers to the position of upper index,$\begin{Bmatrix} \mu \\ \lambda \nu \end{Bmatrix}$ is Christoffel's 
+symbol and $Q_{\mu\nu\lambda} = -D_{\mu}(\Gamma)g_{\nu\lambda}$ is the covariant derivative of the metric tensor. 
+
+\hspace{2cm}
+
+$K^{\mu}_{\lambda\nu}=\frac{1}{2} (T^{\mu}_{.\lambda\nu} + T^{\mu}_{.\nu\lambda} - T^{\mu}_{\nu.\lambda})$ is contortion and ${T^\mu _{\lambda\nu}} = {\Gamma^\mu_{\lambda\nu}} - {\Gamma^\mu_{\nu\lambda}} = 2{\Gamma^\mu_{[\lambda\nu]}}
+$ is the torsion, the anti-symmetric part of the connection.
+
+
+In differential geometry, the generic form of an affine connection is suggested as:
+
+$$\nabla_X Y=\Gamma(X,Y)$$
+
+where 
+$\nabla$ represents the covariant derivative acting on tangent vector fields X and  Y by assigning a new tangent vector  $\nabla_X Y$
+ The connection coefficient $\Gamma$
+ specifies the dependence of the covariant derivative on the tangent vector fields.
+The covariant derivative 
+$\nabla_X Y$ satisfies certain properties, such as linearity in 
+X and 
+Y, Leibniz rule[23], and compatibility with the metric structure if present. The connection coefficient 
+$\Gamma$ encodes the geometric information about the manifold and how nearby tangent spaces are connected.
+
+The choice of $\Gamma$
+ determines the behavior of parallel transport, geodesics, and curvature on the manifold. Different choices of  can lead to different geometric properties and interpretations of the manifold.
+
+
+In the theory of general relativity, the assumption of metric compatibility for the connection is made. This means that the partial derivative tangent vectors are linearly independent, resulting in the vanishing of $D_{\mu}(\Gamma)g_{\nu\lambda}
+$. Additionally, the metric compatibility of the connection naturally emerges when the covariant derivative is treated as a tensor and follows the Leibniz rule.
+In the context of general relativity, metric compatibility implies that a flat space can be locally found in a suitable frame, known as Minkowski space. In a freely falling frame, for example, where $g_{\nu\lambda} = \eta_{\nu\lambda} [21]
+$ (the Minkowski metric), the quantity $D_{\mu}(\Gamma)g_{\nu\lambda}$ vanishes. In such a frame, the covariant derivative of a tensor is the same for all observers and frames, meaning $D_{\mu}(\Gamma)g_{\nu\lambda}=0$.[18,22-24]
+
+Another assumption in general relativity is that the affine geodesics align with the metrical geodesics[25]. The latter is obtained by extremizing the spacetime interval $ds^2$.[28,29] Assuming a torsion-free scenario where ${K^\mu_{\lambda\nu}}
+$ vanishes completely, the metric tensor serves as the gravitational field potential, and the geometry described by Riemann is symmetric. In this case, the affine connection simplifies to
+
+\begin{equation}
+    \Gamma^{\mu}_{\lambda\nu} = \begin{Bmatrix}
+\mu \\
+\lambda \nu \\
+\end{Bmatrix}
+\label{eq:3}
+\end{equation}
+
+The assumption of symmetric connection coefficients in GR leads to commutative partial derivatives-
+\begin{equation}
+  \widetilde{\Gamma}^
+{\gamma}_{\beta\mu} = \left(\frac{\partial x^{\gamma}}{\partial X^{\alpha}}\right) \left(\frac{\partial^2 X^{\alpha}}{\partial x^{\beta}\partial x^{\mu}}\right)
+\label{eq:4}
+\end{equation}
+
+
+In Section \ref{sec:Symmetry Properties of deformed affine connection}, we discussed \eqref{eq:4} in detail.
+
+
+
+Under the conditions of metric compatibility, symmetry of the metric tensor indices, and commutation of partial derivatives, a particular version of the connection coefficients known as the Levi-Civita connection can be defined. In this case, the Christoffel symbols can be expressed as [18]
+
+\begin{equation}
+\Gamma^{\gamma}_{\beta\mu} = \frac{1}{2} g^{\alpha\gamma}(g_{\alpha\beta,\mu} + g_{\alpha\mu,\beta} - g_{\beta\mu,\alpha})
+\label{eq:5}
+\end{equation}
+
+where $\Gamma^{\mu}_{\alpha\beta} = \Gamma^{\mu}_{\beta\alpha}$.
+
+
+\subsection{\Large Compatibilty of Metric Tensor}
+
+
+The covariant derivative of the deformed metric tensor can be defined using the partial derivative in a free-falling frame, which corresponds to the Minkowski space. In this frame, the covariant derivative reduces to the partial derivative since there are no gravitational effects present. The covariant derivative is a geometric operation that takes into account the curvature of the spacetime manifold and ensures that tensor equations remain valid under coordinate transformations.
+
+In the context of the deformed metric tensor, which incorporates the effects of the GUP or other modifications, the covariant derivative can still be expressed as a partial derivative in the free-falling frame. This is because in the absence of gravitational interactions, the deformation effects do not manifest, and the spacetime behaves as a flat Minkowski space.
+
+Therefore, the covariant derivative of the deformed metric tensor in the free-falling frame can be written as:
+
+\begin{equation}
+    \nabla_\sigma \tilde{g}_{\mu\nu} = \partial_\sigma \tilde{g}_{\mu\nu}
+\label{37}
+\end{equation}
+
+\begin{equation}
+    \partial_\sigma \tilde{g}_{\mu\nu} = (1 + L^2 \ddot x^2)\partial_\sigma g_{\mu\nu} + g_{\mu\nu}L^2(\ddot x^2),_\sigma
+\label{38}
+\end{equation}
+
+
+where $\nabla_\sigma$ denotes the covariant derivative, $ \partial_\sigma$ represents the partial derivative,  $\tilde{g}_{\mu\nu}$ represents the deformed metric tensor and $\tilde{g}_{\mu\nu}=(1 + L^2\ddot x^2)g^{\mu\nu}$, $L$ is constant.
+
+Now if we use $\ddot x^2=g_{\mu\nu}\ddot x^\mu \ddot x^\nu$ in \eqref{38}, then
+
+
+\begin{equation}
+    \partial_\sigma \tilde{g}_{\mu\nu} = (1 + L^2\ddot x^2)\partial_\sigma g_{\mu\nu} + L^2(g_{\mu\nu,\sigma}\ddot x^\mu \ddot x^\nu + g_{\mu\nu}\ddot x^\mu,\sigma \ddot x^\nu + g_{\mu\nu}\ddot x^ \mu \ddot x^\nu,\sigma)g_{\mu\nu}
+\label{39}
+\end{equation}
+
+When we find the derivate of $\ddot x^\mu$ with respect to space-time co-ordinates
+
+\begin{equation}
+    {\ddot x^\mu_,\sigma} = \frac{\partial}{\partial x^\sigma}\left(\frac{\partial^2 x^\mu}{\partial s^2}\right)
+\label{40}
+\end{equation}
+
+and now using the commutation property of partial derivatives
+
+\begin{equation}
+    {\ddot x^\mu_,\sigma} = \frac{\partial^2}{\partial s^2}\frac{\partial x^\mu}{\partial x^\sigma}
+\label{41}
+\end{equation}
+
+\begin{equation}
+    {\ddot x^\mu_,\sigma} = \frac{\partial^2}{\partial s^2}{\delta^\mu_\sigma} = 0
+\label{42}
+\end{equation}
+
+where $\delta^\mu_\sigma = \frac{\partial x^\mu}{\partial x^\sigma}
+$ [18]
+And the same thing for ${\ddot x^\nu _{,\sigma}}$
+
+
+\begin{equation}
+    {\ddot x^\nu _{,\sigma}} = 0
+\label{43}
+\end{equation}
+
+
+Substituting ${\ddot x^\mu _{,\sigma}}$ and ${\ddot x^\nu _{,\sigma}}$ in \eqref{39} by \eqref{43} and \eqref{44}
+
+\begin{equation}
+    \partial_{\sigma}\tilde{g}_{\mu\nu} = (1 + L^2\ddot x^2)g_{\mu\nu,\sigma} + (g_{\mu\nu,\sigma}\ddot x_{\mu}\ddot x_{\nu})L^2 g_{\mu\nu}
+\label{44}
+\end{equation}
+
+Now taking $g_{\mu\nu,\sigma}$ as common, we get
+
+
+\begin{equation}
+    \partial_{\sigma}\tilde{g}_{\mu\nu} = (1 + 2L^2\ddot x^2)g_{\mu\nu,\sigma}
+\label{45}
+\end{equation}
+
+In the free-falling frame, the metric tensor $g\mu\nu$ is equivalent to the Minkowski metric tensor $\eta\mu\nu$. Therefore, in this frame, \eqref{45} can be expressed as
+
+\begin{equation}
+    \partial_{\sigma}\tilde{\eta}_{\mu\nu} = (1 + 2L^2\ddot x^2)\eta_{\mu\nu,\sigma}=0
+\label{46}
+\end{equation}
+
+where $\eta_{\mu\nu,\sigma}=0$
+
+Based on the \eqref{46}, it can be observed that the covariant derivative of the deformed metric tensor in the free-falling frame is zero which implies that the covariant derivative will also vanish for all frames. In other words, the absence of gravitational effects leads to the vanishing covariant derivative for the deformed metric tensor.
+
+\begin{equation}
+    \nabla_{\sigma}\tilde{g}_{\mu\nu} = 0
+\label{47}
+\end{equation}
+
+
+\section{\Large Minimal measurable length}
+The concept of minimal length, denoted as L, arises from the assumption that there exists a minimum length uncertainty in certain theories of quantum gravity and string theory. This uncertainty is predicted as a consequence of the gravitational fields acting on the uncertainty principle. The presence of this minimal length suggests that [12]
+
+\begin{equation}
+\Delta x \Delta p \geq \frac{\hbar}{2} \left[1 + \beta (\Delta p)^2 + \beta \langle p \rangle^2\right]
+\label{eq:6}
+\end{equation}
+
+where $\langle p \rangle$ is the momentum expectation value, while $\Delta x $ represents the length uncertainty, $\Delta p$ the momentum uncertainty and $\beta$ is a parameter that's introduced in the context of the Generalized Uncertainty Principle(GUP)
+
+$$\beta=\frac{\beta_0G}{c^3\hbar}$$ 
+with $\beta_0$ being a dimensionless parameter determined from recent cosmological observations[14,15]. This parameter incorporates the effects of gravity into the uncertainty principle.
+
+The commutation relation between the length and momentum operators can be expressed as
+
+\begin{equation}
+[\hat{x}
+, \hat{p}
+] = i\hbar(1 + \beta\hat{p}
+^2)
+\label{eq:5}
+\end{equation}
+The minimum uncertainty of position $\Delta x_{\text{min}}$ for all the values of expectation values 
+of momentum $\langle p \rangle$ will be
+
+\begin{equation}
+\Delta x_{\text{min}} (\langle p \rangle) = \hbar \sqrt{\beta} \sqrt{1 + \beta \langle p \rangle^2}
+\label{eq:6}
+\end{equation}
+
+then the absolute minimum uncertainty of position is at  $\langle p \rangle^2=0$,  
+\begin{equation}
+\Delta x_0 = \hbar \sqrt{\beta}
+\label{eq:7}
+\end{equation}
+
+In the context of the Generalized Uncertainty Principle (GUP), the value of $\Delta x_0$ can be considered as a possible minimal length. This minimal length is associated with the effect of gravitational fields on quantum mechanics (QM). In simpler terms, the GUP suggests that due to gravity's influence, there exists a minimum length scale, represented by $\Delta x_0$.
+
+\begin{equation}
+    L = \hbar \sqrt{\beta}
+    \label{eq:8}
+\end{equation}
+
+The minimal length can be regarded as a fundamental physical quantity that arises from combining other fundamental physical quantities. It incorporates the gravitational constant (G) from gravity, the reduced Planck constant ($\hbar$) from QM, and the speed of light (c) from special relativity[16]. The specific value of the minimal length can be obtained through this combination of fundamental constants.
+
+\begin{equation}
+L = l_p = \sqrt{\frac{\hbar G}{c^3}}
+\label{9}
+\end{equation}
+
+where $l_p$ is called Planck Length
+
+The existence of a minimal length, such as the Planck length ($l_p$), implies the existence of a maximum achievable acceleration. This connection arises from the combination of fundamental physical quantities, including the gravitational constant (G), the reduced Planck constant ($\hbar$), and the speed of light (c). The presence of a minimal length suggests a fundamental limitation on how quickly acceleration can occur within the framework of these fundamental physical quantities[17].
+
+\begin{equation}
+A_{\text{max}} = \frac{c^2}{l_p} = \sqrt{\frac{c^7}{\hbar G}}
+ \label{10}
+\end{equation}
+
+And according to the definition of minimal length \eqref{eq:8} via GUP, the maximal acceleration will be
+\begin{equation}
+A_{\text{max}} = \frac{c^2}{L} = \sqrt{\frac{c^4}{h^2 \beta}}
+\label{11}
+\end{equation}
+
+\section{\Large Deformation of Metric Tensor}
+Caianiello proposed that the deformed theory of general relativity (GR) can be described by considering a four-dimensional spacetime that is embedded as a hypersurface within an eight-dimensional manifold, denoted as $M_8$ [10,11,13]. The coordinates in this eight-dimensional manifold are represented as $x^A$
+\begin{equation}
+x^A = (x^\mu, \left(\frac{L}{c} \right)\dot{x}
+^{\mu}) 
+\label{14}
+\end{equation}
+
+In the context of Caianiello's proposal, the coordinates in the eight-dimensional manifold $M_8$ are represented by $x^A$, where A ranges from 0 to 7. The four spacetime dimensions are denoted by $\mu$, and $x^\mu = \frac{dx^\mu}{ds}$ represents the four-velocity.
+
+The minimal length, denoted as L, can be defined according to the Generalized Uncertainty Principle (GUP) as a minimal uncertainty in position. One possible expression for L is $L = \sqrt{\frac{\beta}{\Delta p}}
+$, where $\beta$ is a parameter associated with the GUP. Alternatively, $L=l_p$ can be considered as the value for the minimal length, given by \eqref{eq:1}
+
+$$L = \sqrt{\frac{\hbar G}{c^3}}$$
+
+The deformed line element in the eight-dimensional manifold $M_8$ [8,9]
+\begin{equation}
+    d\widetilde{s} ^2 = g_{AB} dx^A dx^B
+    \label{13}
+\end{equation}
+
+where $g_{AB}$ is result of $g_{AB} = g_{\mu\nu} \otimes g_{\mu\nu}$. Now substituting $dx^A$ and $dx^B$ from \eqref{14}, in \eqref{13}
+
+\begin{equation}
+d\widetilde{s}^2= \left(1 + Lg_{\mu\nu}\frac{dx^{\mu}}{ds}\frac{dx^{\nu}}{ds} + Lg_{\mu\nu}\frac{d\dot x^{\mu}}{ds}\frac{dx^{\nu}}{ds} + L^2g_{\mu\nu}\frac{d\dot x^{\mu}}{ds}\frac{d\dot x^{\nu}}{ds}\right)ds^2
+\label{22}
+\end{equation}
+
+where c=1, and $ds^2=g_{uv}dx^\mu dx^\nu$ is the classical line element
+
+\begin{equation}
+    d\widetilde{s}^2 = ds^2 + (L^2 g_{\mu\nu} \ddot{x}^{\mu} \ddot{x}^{\nu}) ds^2
+\label{19}
+\end{equation}
+
+where $\ddot x^\mu=\frac{d\dot x^\mu}{ds}$ is the acceleration, $\mu$, $\nu$ are the dummy indices, and $\vec{\dot x} \cdot \Vec{\dot x}=-1$ and $\vec{\dot x} \cdot \vec{\ddot x}=0$
+
+
+
+\begin{equation}
+     d\widetilde{s}^2=(1 + L^2 \ddot{x}^2)ds^2
+\label{21}
+\end{equation}
+
+where $\ddot x^2=g_{\mu \nu}\ddot x^\mu \ddot x^\nu$.
+
+The deformed line element in four-dimensional spacetime, obtained as a projection from eight dimensions to four dimensions, can be expressed as
+
+\begin{equation}
+    d\widetilde{s}^2=\widetilde{g}_{\mu\nu}dx^{\mu} dx^{\nu}
+    \label{20}
+\end{equation}
+
+where $\widetilde{g}_{\mu \nu}$ is the assumed deformed metric tensor, which will be determined by solving the equations \eqref{21} and \eqref{20}
+
+\begin{equation}
+    \widetilde{g}_{\mu\nu} = (1 + L^2 \ddot{x}^2)ds^2
+ \label{18}
+\end{equation}
+
+where $\ddot x^2=g_{\alpha \beta}\ddot x^\alpha \ddot x^\beta$, $\beta,\alpha$ are the dummy indices, and $\mu$,$\nu$ are free indices.
+
+Incase of  flat spacetime,
+
+    \begin{equation}
+\widetilde{\eta}_{\mu\nu} = \left(1 + L^2 \ddot{x}^2\right)\eta_{\mu\nu}
+\label{17}
+\end{equation}
+
+The correction factor of the deformed metric tensor can be redefined in terms of the maximal acceleration, denoted as $A_{\text{max}}$. The value of $A_max$ is given by $A_{\text{max}} = \frac{c^2}{L}$, which can also be written as $A_{\text{max}} = \sqrt{\frac{c^7}{\hbar G}}$ [17]. Incorporating this correction factor, the deformed metric tensor will be
+
+
+
+\begin{equation}
+\widetilde{g}_{\mu\nu} = \left(1 + \frac{1}{{A^2_{\text{max}}}} \ddot{x}^2\right)g_{\mu\nu}
+\label{16}
+\end{equation}
+
+where c=1.
+
+
+\section{\Large Deformation of Affine connection in Riemannian manifold}
+
+The minimal length approach proposes a deformation of the metric tensor which can be expressed as 
+
+\begin{itemize}
+
+\item \textbf{Incase of Flat Space}
+
+\begin{equation}
+    \tilde{\eta}^{\mu\nu} = \eta_{\mu\nu} + \beta\hbar^2 \ddot x^2 \eta_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}
+\label{30}
+\end{equation}
+
+where $h_{\mu\nu} = \beta \hbar^2 \ddot x^2 \eta_{\mu\nu}$
+
+\item  \textbf{Incase of Curved Space}
+
+
+\begin{equation}
+    \tilde{g}_{\mu\nu} = g_{\mu\nu} + L^2 x\ddot{^2} g_{\mu\nu} = g_{\mu\nu} + q_{\mu\nu}
+    \label{28}
+\end{equation}
+\eqref{eq:8} suggests that the tensor $q_{\mu\nu}$ can be considered as the contribution from GUP. This tensor represents the deformation or modification of the metric tensor due to the effects of the minimal length uncertainty. Its specific form is given by the following expression.
+\begin{equation}
+    q_{\mu\nu} = \beta\hbar^2 \ddot x^2 g_{\mu\nu}
+ \label{29}
+\end{equation}
+
+\end{itemize}
+
+Both $g_{\mu\nu}$  and  $\tilde{g}_{\mu\nu}$ turn covariant tensors to contravariant and vice versa.
+
+The symmetric property of the deformed metric tensor is given by 
+
+\begin{equation}
+   \tilde{g}_{\mu\nu}=\frac{1}{2} (g_{\mu\nu} + g_{\nu\mu})
+    \label{36}
+\end{equation}
+
+The LHS part of the equation of \eqref{36} is \eqref{35}
+\begin{equation}
+    \tilde{g}_{\mu\nu}=g_{\mu\nu} + L^2 \ddot{x}^2 g_{\mu\nu}
+    \label{35}
+\end{equation}
+
+and the RHS is \eqref{34}
+
+\begin{equation}
+        \frac{1}{2} (\tilde{g}_{\mu\nu} + \tilde{g}_{\nu\mu})=\frac{1}{2} (g_{\mu\nu} + L^2 \ddot{x}^2 g_{\mu\nu} + g_{\nu\mu} + L^2 \ddot{x}^2 g_{\nu\mu})
+        \label{34}
+\end{equation}
+
+And since, $g_{\mu\nu}$ is symmetric, so we replace the $g_{\nu\mu}$ terms by $g_{\mu\nu}$.
+
+
+\begin{equation}
+    \frac{1}{2} (\tilde{g}_{\mu\nu} + \tilde{g}_{\nu\mu})=\frac{1}{2} (g_{\mu\nu} + L^2 \ddot{x}^2 g_{\mu\nu} + g_{\mu\nu} + L^2 \ddot{x}^2 g_{\mu\nu})
+     \label{33}
+\end{equation}
+
+And applying some common mathematical logic, we can say \eqref{33} and \eqref{35} is equal. Hence, L.H.S=R.H.S of \eqref{36}.
+
+\begin{equation}
+    \frac{1}{2} (\tilde{g}_{\mu\nu} + \tilde{g}_{\nu\mu}) = g_{\mu\nu} + L^2 \ddot{x}^2 g_{\mu\nu}
+\label{32}
+\end{equation}
+
+Now for deformed affine connection, we replace $g_{\mu\nu}$ in \eqref{eq:5} with $\tilde{g}_{\mu\nu}$ with \eqref{28}. 
+
+And the deformed equation \eqref{eq:5} is expressed as
+
+\begin{equation}
+  \tilde{\Gamma}^{\gamma}_{\beta\mu} = \frac{1}{2} \widetilde{g}^{\alpha\gamma} \left(\widetilde{g}_{\alpha\beta,\mu} + \widetilde{g}_{\alpha\mu,\beta} - \widetilde{g}_{\beta\mu,\alpha} \right)
+\label{31}
+\end{equation}
+
+And for curved space, we'll substitute \eqref{28} and \eqref{45} in \eqref{31}, we get the following form
+
+\begin{equation}
+    \tilde{\Gamma}^{\gamma}_{\beta\mu} = \frac{1 + 2L^2x\ddot{^2}}{1 + L^2x\ddot{^2}}  \frac{1}{2}g^{\alpha\gamma}\left(g_{\alpha\beta,\mu} + g_{\alpha\mu,\beta}-g_{\beta\mu,\alpha} \right)=\frac{1 + 2L^2 \ddot{x}^2}{1 + L^2 \ddot{x}^2} \Gamma^{\gamma}_{\beta \mu}
+\label{27}
+\end{equation}
+
+
+where $\tilde{g}_{\alpha\gamma} = \frac{{g_{\alpha\gamma}}}{{1 + L^2\ddot x^2}}$
+
+It is evident that when the term $L^2\ddot x^2$ vanishes, the undeformed affine connection $\Gamma_\gamma^\beta\mu$ is straightforwardly recovered. This occurs when there is no minimal length uncertainty ($L^2 = 0$) and/or when the acceleration term $\ddot x^2$ vanishes. In other words, the effects of the GUP on GR are canceled out in these cases. We have demonstrated in \eqref{28} that both deformation ingredients,$ L^2$ and $\ddot x ^2$, are interdependent. The parameterization of the four coordinates on the manifold M in terms of eight coordinates on the tangent bundle TM introduces the spacelike four-acceleration $\ddot x ^2$ generating additional geometric structure. In \eqref{27}, it is evident that the deformation of the affine connection is solely localized in its coefficient: while the undeformed connection ${\Gamma^\gamma_{\beta\mu}}$ has a coefficient of unity, the deformed version acquires the coefficient $\frac{{1 + 2L^2\ddot x^2}}{{1 + L^2\ddot x^2}}$. This implies that the affine connection preserves its geometric nature as in GR, while also exhibiting deformation through additional curvature on the higher-dimensional manifold, particularly at energy scales where $L^2\ddot x^2$ becomes significant.
+
+
+
+
+
+
+\section{\Large Symmetry properties of deformed affine connection}
+\label{sec:Symmetry Properties of deformed affine connection}
+The symmetry property of the affine connection depends on two factors: 
+\begin{enumerate}
+\item \textbf{The symmetry property of the metric tensor}: If the metric tensor is symmetric, meaning $g\mu \nu = g\nu \mu$ , then the affine connection will also exhibit symmetry in its indices. This symmetry property of the metric tensor is crucial for maintaining the symmetric nature of the affine connection.
+
+\item \textbf{The commutation of the partial derivatives}: The affine connection's symmetry is further influenced by the commutation behavior of the partial derivatives. In particular, if the partial derivatives commute, meaning $\partial_\mu \partial_\nu = \partial_\nu \partial_\mu
+$, then the affine connection will also possess symmetry.
+\end{enumerate}
+
+The deformed affine connection \eqref{27}, which refers to the modified or corrected affine connection in the presence of deformations or gravitational effects, fulfills the two conditions
+\begin{itemize}
+    \item The specific mathematical expression for the deformed affine connection depends on the form of the deformed metric tensor and the chosen coordinate system. It incorporates the effects of the deformation and gravitational influences, as described by the deformed metric tensor and its associated derivatives.
+\begin{equation}
+    \tilde{\Gamma}^{\gamma}_{\beta\mu} = \frac{1}{2} \tilde{g}^{\alpha\gamma} (\tilde{g}_{\alpha\beta,\mu} + \tilde{g}_{\alpha\mu,\beta} - \tilde{g}_{\beta\mu,\alpha})
+\label{23}
+\end{equation}
+
+If the deformed metric tensor is symmetric, then the deformed affine connection will also exhibit symmetry.
+
+\item The affine connection can be expressed as [21]
+\begin{equation}
+    \tilde{\Gamma}^{\gamma}_{\beta\mu} =\frac{\partial x^{\gamma}}{\partial X^{\alpha}} \frac{\partial^2 X^{\alpha}}{\partial x^{\beta} \partial x^{\mu}}
+\label{24} 
+\end{equation}
+where $x^\lambda$, $X^\alpha$  represent different co-ordinates in curved space and the commutation of partial derivatives hold true for the deformed affine connection \eqref{27}. This means that the order in which the partial derivatives are taken does not affect the final result of the connection. This property remains valid even when the coordinates, denoted by $X^\alpha$, are deformed to incorporate the existence of a minimal length uncertainty.
+
+\end{itemize}
+
+And so , we can see that deformed affine connection is symmetric in lower indices  $\tilde{\Gamma}^{\gamma}_{\mu\beta}$
+\begin{equation}
+    \tilde{\Gamma}^{\gamma}_{(\beta\mu)} = \tilde{\Gamma}^{\gamma}_{\beta\mu} = \tilde{\Gamma}^{\gamma}_{\mu\beta}
+\label{25}
+\end{equation}
+
+And since in Riemannian Manifold, deformed affine connection is free of torsion, so
+
+\begin{equation}
+    T^{\gamma}_{\beta\mu} = \tilde{\Gamma}^{\gamma}_{\beta\mu} - \tilde{\Gamma}^{\gamma}_{\mu\beta} = 2 \tilde{\Gamma}^{\gamma}_{[\beta\mu]} = 0
+\label{26}
+\end{equation}
+
+where $\tilde{\Gamma}^{\gamma}_{[\beta\mu]}=0$
+
+\section{\Large Conclusion and Summary}
+
+
+
+The minimal length approach, arising from the noncommutative Heisenberg algebra GUP, offers a way to incorporate gravity into QM by extending HUP to account for gravitational effects[26,27]. When applying this approach to GR, the metric tensor becomes deformed, acquiring an additional term related to the GUP parameter($\beta$, undeformed metric tensor, and squared four-acceleration $\ddot x^2$
+
+In this study, we focused on the deformation of the affine connection  expressed in terms of the metric tensor and its derivatives. We further analyzed its symmetry properties and evaluated how a normalized parallel transported vector depends on the spacelike four-acceleration. This analysis revealed that the minimal length uncertainty and the deformation have significant effects, particularly at energy scales where $ L^2\ddot x^2$ becomes finite.
+Based on our findings, we came to a point where we can say that the correction to the affine connection can be factorized as $(1 + 2L^2\ddot x^2)/(1 + L^2\ddot x^2)$ incorporating the effects of GUP- the minimal lenghth uncertainty, geometric structure, noncommutative algebra, and gravity. Importantly, the deformed affine connection preserves key properties of its undeformed counterpart, such as torsion-freedom or metric compatibility. It also maintains its geometric nature of connecting nearby tangent spaces on a smooth manifold, even in discrete spaces. The deformation introduces additional curvature on a higher-dimensional manifold, which likely reveals fine geometric structures akin to radiation beams in classical and QM.
+
+
+
+
+\end{document}
